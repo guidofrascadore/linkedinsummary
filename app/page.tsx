@@ -17,9 +17,7 @@ import { JSX, SVGProps } from "react"
 
 import Markdown from 'react-markdown'
 
-
 import { generateLinkedInSummary } from './actions';
-//import { extractLinkedInExperiences } from './scrapeLinkedin';
 
 export default function Home() {
   const [jobTitle, setJobTitle] = useState('')
@@ -82,7 +80,6 @@ export default function Home() {
 
     try {
       // Simulating an API call with a timeout
-      //const experiences = await extractLinkedInExperiences(url);
 
       //const formattedText = text.replace(/\n/g, '\n\n');
       //setGeneratedText(formattedText)
@@ -139,11 +136,11 @@ export default function Home() {
 
       <main className="flex-1 px-4 py-8 sm:px-6 md:py-12">
         <div className="mx-auto grid max-w-4xl gap-8">
-          <Card className="bg-black dark:bg-white w-full mx-auto">
-            {/* <CardHeader>
+          {/*<Card className="bg-black dark:bg-white w-full mx-auto">
+             <CardHeader>
               <CardTitle>Linked Profile Scraper</CardTitle>
               <CardDescription>Enter a profile URL to scrape its content</CardDescription>
-            </CardHeader> */}
+            </CardHeader> 
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4 mt-2">
                 <div className="space-y-2">
@@ -194,7 +191,8 @@ export default function Home() {
                 </Alert>
               )}
             </CardContent>
-          </Card>
+            
+          </Card>*/}
 
           <Card>
             <CardHeader>
